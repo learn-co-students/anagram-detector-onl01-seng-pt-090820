@@ -12,8 +12,7 @@ class Anagram
     end
 
     def match(anagrams)
-        @anagrams = anagrams
-        @anagrams.select {|anagram| word_split_alphabetized(anagram) == word_split_alphabetized(self.word)}
+        anagrams.select {|anagram| word_split_alphabetized(anagram) == word_split_alphabetized(self.word)}
        # binding.pry
     end
 
